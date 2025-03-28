@@ -7,7 +7,6 @@ import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Generating from "./Generating";
 
-
 const Hero = () => {
   const parallaxRef = useRef(null);
 
@@ -37,7 +36,14 @@ const Hero = () => {
             Spot a pothole, broken streetlight, or uncollected garbage? Report
             it in seconds and track the resolution process effortlessly.
           </p>
-          <Button href="/pricing" white>
+          <Button
+            white
+            onClick={() => {
+              document
+                .getElementById("reportbox")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Report an Issue
           </Button>
         </div>

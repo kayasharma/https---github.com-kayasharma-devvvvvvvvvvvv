@@ -26,7 +26,7 @@ const Reportbox = () => {
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
-      id="hero"
+      id="reportbox"
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
